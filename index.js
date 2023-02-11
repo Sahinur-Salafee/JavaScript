@@ -25,3 +25,22 @@ console.log(students);
 // Remove element of the array
 let removeStudents = students.pop();
 console.log(students);
+
+
+// Array Splice
+let animal = ['Cow', 'Dog', 'Sheep', 'Goat', 'Cat', 'Monkey'];
+console.log(animal);
+
+let animalList = animal.splice(2,3);
+console.log(animalList);
+console.log(animal);
+
+let newAnimals = animal.splice(1);
+console.log(animal);
+
+// Array Slice
+let cars = ['BMW','AXIO', 'Tesla', 'Ferari', 'Lembergini', 'Alion'];
+console.log(cars);
+
+let newCars = cars.slice(2,4);
+console.log(newCars);
