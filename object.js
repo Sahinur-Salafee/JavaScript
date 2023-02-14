@@ -8,6 +8,9 @@ let MyObject = {
     weight: '72kg',
     welcomeMsg: function() {
         console.log('Welcome to my site.');
+    },
+    salafee: function () {
+        console.log('Salafee');
     }
 }
 
@@ -30,3 +33,17 @@ MyObject.welcomeMsg();
 for(item in MyObject) {
     console.log(item);
 }
+
+MyObject.salafee();
+
+MyObject.salafee = function () {
+    console.log('Hello salafee');
+}
+
+MyObject.salafee();
+
+MyObject.Mahbub = function() {
+    console.log('Hello I am Mahbub');
+}
+
+MyObject.Mahbub();
