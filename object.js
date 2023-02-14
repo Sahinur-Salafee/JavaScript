@@ -47,3 +47,31 @@ MyObject.Mahbub = function() {
 }
 
 MyObject.Mahbub();
+
+// Array in Object 
+console.log('//Array Inside a Object');
+let ObjArr = {
+    item: 'student list',
+    studentsName: ['Rahim', 'Karim', 'Jamal', 'Kamal'],
+    age: [12,13,14,15]
+}
+
+console.log(ObjArr.studentsName[2]);
+console.log(ObjArr.age[2]);
+
+// Object In Array 
+console.log('//Object Inside a Array');
+
+let ArrObj = [
+    'Salafee',
+    {
+        name: 'Sahinur',
+        age: 27,
+        job: 'student'
+    },
+    'Bangladesh'
+]
+
+console.log(ArrObj);
+console.log(ArrObj[1]);
+console.log(ArrObj[1].age);
