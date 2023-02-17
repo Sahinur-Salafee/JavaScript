@@ -7,18 +7,35 @@ let funcName = function() {
 funcName();
 
 // Callback function
-function ShowName(name, callback) {
-    var name = 'Salafee';
-    callback(name);
-    console.log('My name is:' + name);
+// function ShowName(name, callback) {
+//     var age = 20;
+//     callback(age);
+//     console.log('My age is:' + age);
+// }
+
+// function ShowAge(age) {
+//     console.log('I am ' + age + 'years old.');
+// }
+
+// ShowName('Sahinur', ShowAge(10));
+
+function callMyName(name, callbacks) {
+    var myAge = 20;
+    console.log('Is it interesting? Yes it is Mr.' + name);
 }
 
-function ShowAge(age) {
-    console.log('I am ' + age + 'years old.');
+function callMyName(name, callback) {
+    var myAge = 40;
+    var myAge2 = 50;
+    callback(myAge,myAge2);
+    console.log('Hi there.' + name);
 }
 
-ShowName('Sahinur', ShowAge);
+function hello(age, a) {
+    console.log('I am passed through argument and my age is: ' + age + a);
+}
 
+callMyName('Zonayed Ahmed', hello);
 
 function welcomeMsg(name) {
     console.log('Welcome Mr.' + name);
@@ -40,6 +57,9 @@ var a = 100;
 console.log('Value of a before changing function is applied: ' + a);
 changeValue(a);
 console.log('Value of a after changing function is applied: ' + a);
+
+
+
 
 
 function aFunc(a) {

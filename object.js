@@ -1,5 +1,4 @@
 // JavaScript Object
-
 let MyObject = {
     firstName: 'sahinur',
     lastName: 'salafee',
@@ -11,10 +10,33 @@ let MyObject = {
     },
     salafee: function () {
         console.log('Salafee');
-    }
+    },
+    mahbub: function() {
+        console.log('I am Mahbub');
+    },
+    students: [
+        'rahim',
+        'karim',
+        'shagor'
+    ]
 }
 
 console.log(MyObject);
+
+let arr = [
+    'shuvo',
+    'salafee',
+    'shagor',
+    classes = {
+
+    }
+
+];
+console.log(arr[1]);
+
+console.log(MyObject.mahbub());
+console.log(MyObject.firstName);
+console.log( 'Students Name: ' +  MyObject.students[2]);
 
 let MyName = MyObject.firstName;
 console.log(MyName);
@@ -69,9 +91,11 @@ let ArrObj = [
         age: 27,
         job: 'student'
     },
-    'Bangladesh'
+    'Bangladesh',
+    {
+        id: 1,
+        student_name: 'salafee',
+    }
 ]
 
-console.log(ArrObj);
-console.log(ArrObj[1]);
-console.log(ArrObj[1].age);
+console.log(ArrObj[3].id);
