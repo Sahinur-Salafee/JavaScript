@@ -44,3 +44,5 @@ console.log(cars);
 
 let newCars = cars.slice(2,4);
 console.log(newCars);
+
+var a = 10;
