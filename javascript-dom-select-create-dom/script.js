@@ -11,7 +11,7 @@ let box = document.querySelector('.box');
 
 // Select All Elements
 let AllBoxs = document.querySelectorAll('.box');
-console.log(AllBoxs);
+console.log(AllBoxs[2].innerHTML);
 let boxArr = Array.prototype.slice.call(AllBoxs);
 console.log(boxArr);
 console.log(boxArr[2].innerHTML);
