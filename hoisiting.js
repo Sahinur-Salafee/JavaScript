@@ -15,8 +15,14 @@ function add() {
     console.log('This is a add function');
 }
 
-animal();
+// animal();
 
-let animal = function() {
-    console.log('This is a animal function');
+// let animal = function() {
+//     console.log('This is a animal function');
+// }
+
+mahbub();
+
+function mahbub() {
+    console.log('Hi I am Mahbub');
 }
