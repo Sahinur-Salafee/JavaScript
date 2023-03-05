@@ -26,3 +26,25 @@ function sum(numbers){
 console.log(sum([1,2,3]));
 console.log(sum([-1,1]));
 console.log(sum([]));
+
+
+
+console.log(greet('Alice'));  //  Hello Alice
+console.log(greet(''));  // Hellow World
+console.log(greet());   // Hellow World
+
+
+function test(name) {
+    // if(!name || name === '') {
+    //     console.log('Hello World.');
+    // } else {
+    //     console.log('Hello ' + name);
+    // }
+
+    (!name || name=== '') ? console.log('Hello World') : console.log('Hello ' + name);
+}
+
+test('shuvo');
+test('');
+test();
+
