@@ -48,3 +48,44 @@ test('shuvo');
 test('');
 test();
 
+
+// Count number of Vowels in String
+
+const text = 'Hello';
+// let letter = text.charAt(1);
+// console.log(letter);
+
+function findVowels(text) {
+    let vowels = ["a", "e", "i", "o", "u"];
+    let vowelCount = 0;
+  
+    for (let i = 0; i < text.length; i++) {
+      if (vowels.includes(text[i].toLowerCase())) {
+        vowelCount++;
+      }
+    }
+  
+    return vowelCount;
+  }
+
+//   console.log(findVowels('sahinur salafee'));
+
+
+
+function countVowel(str) {
+    let count = 0;
+    str = str.toLowerCase();
+
+    for(i=0; i<str.length; i++) {
+        if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowel('bangladesh'));
+
+
+
