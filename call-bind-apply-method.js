@@ -53,3 +53,37 @@ var myFatherAge = {
 
 let ageOfmyFather = john.ageCalc.call(myFatherAge, 2023);
 console.log(ageOfmyFather);
+
+// Apply Method
+
+var Rubel = {
+    name: 'Rubel',
+    age: 25,
+    job: 'student',
+    anotherObj: {
+        name: 'Rubel Rana',
+        msg: function () {
+            console.log('My name is ' + this.name);
+        }
+    }
+}
+
+Rubel.anotherObj.msg(); // Rubel Rana
+Rubel.anotherObj.msg.apply(Rubel); // Rubel
+
+var Rashed = {
+    name: 'Rashed',
+    dob: 1996,
+    age: function (currentYear, msg) {
+        console.log(msg + this.name + ' you are ' + (currentYear - this.dob) + ' years old');
+    }
+}
+
+Rashed.age(2023, 'Hello ');
+
+var Rakib = {
+    name: 'Rakib',
+    dob: 1997
+}
+
+Rashed.age.apply(Rakib, [2023, 'Hi ']);
