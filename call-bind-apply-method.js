@@ -100,8 +100,11 @@ var Jony = {
 
 var Rony = {
     name: 'Rony',
-    dob: 1997
+    dob: 1996
 }
 
 var RonyAge = Jony.age.bind(Rony, 2023);
-RonyAge('Hello! ');
+var RonyAge = Jony.age.bind(Rony);
+RonyAge(2023, 'Hello! ');
+RonyAge(2033, 'Hello! ');
+RonyAge(2043, 'Hello! ');
