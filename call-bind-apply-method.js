@@ -90,18 +90,18 @@ Rashed.age.apply(Rakib, [2023, 'Hi ']);
 
 // Bind Method
 
-var Rubel = {
-    name: 'Rubel',
-    age: 25,
-    job: 'student',
-    anotherObj: {
-        name: 'Rubel Rana',
-        msg: function () {
-            console.log('My name is ' + this.name);
-        }
+var Jony = {
+    name: 'Jony',
+    dob: 1996,
+    age: function (currentYear, msg) {
+        console.log(msg + this.name + ' is ' + (currentYear - this.dob) + ' years old');
     }
-
 }
 
-Rubel.anotherObj.msg(); // Rubel Rana
-Rubel.anotherObj.msg.bind(Rubel)(); // Rubel
+var Rony = {
+    name: 'Rony',
+    dob: 1997
+}
+
+var RonyAge = Jony.age.bind(Rony, 2023);
+RonyAge('Hello! ');
