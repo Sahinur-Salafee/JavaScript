@@ -1,4 +1,6 @@
 // Inheritance
+
+// Prototype Inheritance
 var Person = function (name, age, job) {
     this.name = name;
     this.age = age;
