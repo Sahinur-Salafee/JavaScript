@@ -31,3 +31,10 @@ function test() {
     console.log(playername);
 }
 test();
+
+
+// hoisting
+// var
+console.log(playername);
+// var playername = "Lionel Messi";
+let playername = "Messi";
