@@ -37,3 +37,15 @@ console.log(age1);
 const { name: name3, age: age3, job: job3 } = myObj;
 console.log(name3);
 console.log(age3);
+
+let commonObj = {
+    anotherObj: {
+        anotherNewObj: {
+            title: 'JavaScript ES6 Destructuring'
+        }
+    }
+}
+
+let { anotherObj: { anotherNewObj: { title } } } = commonObj;
+
+console.log(title);
