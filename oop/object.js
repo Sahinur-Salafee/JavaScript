@@ -12,7 +12,13 @@ const circle = {
 circle.draw();
 console.log(circle.location.x);
 
-/* Factory Function */
+/**
+ * Factory Function thats returns an object
+ * @param {*} radius 
+ * @returns Object
+ * 
+ */
+
 function createCircle(radius) {
     return {
         radius,
