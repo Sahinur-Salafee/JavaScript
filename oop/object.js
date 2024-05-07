@@ -1,3 +1,6 @@
+/**
+ * Object
+ */
 const circle = {
     radius: 1,
     location: {
@@ -34,3 +37,19 @@ console.log(circle2.draw());
 
 const circle3 = createCircle(3);
 console.log(circle3);
+
+
+/**
+ * Constructor Function
+ * @param {*} radius 
+ */
+
+function Circle(radius) {
+    this.radius = radius,
+    this.draw = function () {
+        console.log('Draw');
+    }
+}
+
+const anotherCircle = new Circle(4);
+console.log(anotherCircle);
