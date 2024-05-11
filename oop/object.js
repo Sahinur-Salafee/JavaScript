@@ -70,5 +70,23 @@ a.value = 5;
 console.log(a.value);
 console.log(b.value);
 
-// Primitives are copied by their values
-// Objects are copied by their reference
+// Primitives type are copied by their values
+// Objects/reference type are copied by their reference
+
+let number = 15;
+
+function increase(number) {
+   number++;
+}
+
+increase(number);
+console.log(number);
+
+let obj = {value: 20};
+
+function increases(obj) {
+    obj.value++;
+}
+
+increases(obj);
+console.log(obj.value);
