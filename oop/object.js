@@ -53,3 +53,22 @@ function Circle(radius) {
 
 const anotherCircle = new Circle(4);
 console.log(anotherCircle);
+
+//Value vs Reference Type
+// Value
+let x = 10;
+let y = x;
+x = 30;
+
+console.log(x);
+console.log(y);
+
+// Reference Type
+let a = {value:2};
+let b = a;
+a.value = 5;
+console.log(a.value);
+console.log(b.value);
+
+// Primitives are copied by their values
+// Objects are copied by their reference
