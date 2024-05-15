@@ -73,3 +73,30 @@ console.log(addition(9, 9))
 let hello = () => console.log('Hello World');
 hello();
 
+
+/**
+ * Nested Function
+ */
+
+function greet(name) {
+
+    function hello() {
+        console.log('Hello ' + name);
+    }
+
+    return hello();
+}
+
+greet('Salafee');
+
+outerFunction < - function (x) {
+    innerFunction < - function (y) {
+        a < - x + y;
+        return (a);
+    }
+    return innerFunction;
+}
+
+output < - outerFunction(5);
+console.log(output(6));
+
