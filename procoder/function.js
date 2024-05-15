@@ -48,3 +48,28 @@ let sqNumbers = numbers.map(function (number) {
 });
 
 console.log(sqNumbers);
+
+/**
+ * Regular Function
+ */
+
+let add = function (a, b) {
+    return a + b;
+}
+
+console.log(add(5, 4));
+
+/**
+ * Arrow Function
+ * funcName = (parameters) => return
+ * 
+ * Note: This works only if the function has only one statement.
+ * 
+ * Arrow Functions Return Value by Default:
+ */
+
+let addition = (x, y) => x + y;
+console.log(addition(9, 9))
+let hello = () => console.log('Hello World');
+hello();
+
