@@ -88,6 +88,7 @@ function greet(name) {
 }
 
 greet('Salafee');
+greet('Faruq');
 
 outerFunction < - function (x) {
     innerFunction < - function (y) {
