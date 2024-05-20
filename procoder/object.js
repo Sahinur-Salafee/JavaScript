@@ -15,6 +15,9 @@ const mobileModel = {
     [newSym]: 'Symbol for brackets notation',
     brandModel: function () {
         console.log(`The mobile brand is ${this.brand} & the model is ${this.model}`);
+    },
+    battary: {
+        mah: 5000
     }
 }
 
@@ -35,6 +38,8 @@ console.log(Object.keys(mobileModel));
 // Return Object values as Array
 console.log(Object.values(mobileModel));
 mobileModel.brandModel();
+
+console.log(mobileModel.battary.mah);
 
 
 const obj1 = {
@@ -61,3 +66,17 @@ console.log(finalObj);
 // Spread Operator
 const finalObj2 = { ...obj1, ...obj2, ...obj3 }
 console.log(finalObj2);
+
+
+/**
+ * Constructor Object
+ */
+
+function Person(fName, lName) {
+    (this.firstName = fName),
+        (this.lastName = lName)
+}
+
+const person1 = new Person('Joe', 'biden');
+console.log(person1);
+
